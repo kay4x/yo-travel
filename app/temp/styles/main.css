@@ -475,7 +475,7 @@ a {
       word-spacing: 0.1rem;
       line-height: 1.65;
       font-size: 1.125rem;
-      margin: 1.8rem 0;
+      margin: 0 0 1.8rem 0;
       font-weight: 300;
       text-rendering: optimizeLegibility;
       
@@ -688,11 +688,34 @@ a {
     margin-right: -65px;
   }
 
+.row--gutters-large {
+    margin-right: -100px;
+  }
+
+.row--gutters-large > div {
+    padding-right: 100px;
+  }
+
 .row--gutters > div {
      padding-right: 65px;
    }
 
 @media(min-width: 800px){
+  
+      .row__col-md-8 {
+        float: left;
+        width: 66.66%;
+
+      }
+    
+       .row__col-md-8--smaller {
+        width: 65%;
+        }
+
+    .row__col-md-6 {
+        float: left;
+        width: 50%;
+      }
 
      .row__col-md-4 {
       float: left;
@@ -705,16 +728,7 @@ a {
         padding-bottom: 10px;
       }
       
-      .row__col-md-8 {
-        float: left;
-        width: 66.66%;
-
-      }
-    
-       .row__col-md-8--smaller {
-        width: 65%;
-        
-      }
+     
       
       
 
@@ -738,3 +752,108 @@ a {
      display: table;
    
    }
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+
+
+}
+
+@media(min-width: 530px){
+
+.section-title {
+     font-size: 2.5rem
+
+
+}
+  }
+
+.section-title__icon {
+    margin: 0 auto;
+    display: block;
+  
+  }
+
+@media(min-width: 530px){
+
+.section-title__icon {
+       display: inline-block;
+       margin-right: .5rem
+  
+  }
+  }
+
+.section-title__text {
+    letter-spacing: 1.65px;
+    font-weight: 300;
+  }
+
+@media(min-width: 530px){
+
+.section-title__text {
+    display: inline-block;
+    letter-spacing: 1.65px;
+    font-weight: 300
+  }
+  }
+
+.feature-item {
+  padding-left: 0;
+  position: relative;
+  padding-bottom: 1.875rem;
+
+   
+
+}
+
+@media(min-width: 530px){
+
+.feature-item {
+    padding-left: 64px
+
+   
+
+}
+  }
+
+.feature-item__icon {
+    display: block;
+    margin: 2rem auto;
+  }
+
+@media(min-width: 530px){
+
+.feature-item__icon {
+    position: absolute;
+    left: 0
+  }
+  }
+
+.feature-item__contents {
+     padding-left: 0;
+  }
+
+@media(min-width: 530px){
+
+.feature-item__contents {
+         padding-left: 2rem
+  }
+  }
+
+.feature-item__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+    text-align: center;
+  }
+
+@media(min-width: 530px){
+
+.feature-item__title {
+      font-size: 1.875rem;
+      font-weight: 300;
+      text-align: left
+  }
+  }
