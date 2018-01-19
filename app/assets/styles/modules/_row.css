@@ -1,0 +1,56 @@
+.row {
+     width: inherit;
+   
+   
+  &--gutters  {
+    margin-right: -65px;
+  }
+ 
+   &--gutters > div {
+     padding-right: 65px;
+   }
+
+  @mixin atMedium {
+
+     &__col-md-4 {
+      float: left;
+      width: 33.33%;
+      }
+
+      &__col-md-4--larger {
+        width: 37%;
+        
+        padding-bottom: 10px;
+      }
+      
+      &__col-md-8 {
+        float: left;
+        width: 66.66%;
+
+      }
+    
+       &__col-md-8--smaller {
+        width: 65%;
+        
+      }
+      
+      
+
+  @mixin atSmall {
+      &__col-md-4 {
+      float: left;
+      width: 33.33%;
+      }
+      
+      &__col-md-8 {
+        float: left;
+        width: 66.66%;
+      }
+    }
+  }
+  
+ 
+   
+  
+   @mixin clearFix;
+}

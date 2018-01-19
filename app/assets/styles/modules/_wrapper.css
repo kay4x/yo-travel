@@ -1,0 +1,18 @@
+.wrapper {
+   max-width: 1236px;
+   margin: 0 auto;
+   padding: 0 18px;
+   overflow: hidden;
+
+   &--medium {
+     max-width: 976px;
+   }
+    .wrapper {
+     padding-left: 0;
+     pading-left: 0;
+   }
+
+    &--b-margin {
+    padding: 0 0 1.5rem 0;
+ }
+}

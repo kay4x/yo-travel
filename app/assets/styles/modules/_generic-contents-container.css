@@ -1,0 +1,24 @@
+.generic-contents-container {
+    p {
+      width: 100%;
+      word-spacing: 0.1rem;
+      line-height: 1.65;
+      font-size: 1.125rem;
+      margin: 1.8rem 0;
+      font-weight: 300;
+      text-rendering: optimizeLegibility;
+      
+    }
+
+    p a {
+      font-weight: 700;
+      color: $mainOrange;
+      display: inline-block;
+      transition: transform .2s ease-out;
+    }
+
+     a:hover {
+      text-decoration: none;
+      transform: scale(0.9);
+    }
+}
