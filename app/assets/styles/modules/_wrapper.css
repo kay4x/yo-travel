@@ -7,12 +7,19 @@
    &--medium {
      max-width: 976px;
    }
-    .wrapper {
-     padding-left: 0;
-     pading-left: 0;
-   }
+   
 
     &--b-margin {
     padding: 0 0 1.5rem 0;
  }
+
+   &--no-padding {
+      padding-right: 0;
+      padding-left: 0;
+      
+     @mixin atMedium {
+       padding-right: 18px;
+       padding-left: 18px;
+     }
+   }
 }
